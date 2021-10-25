@@ -21,13 +21,13 @@ h1, h2 {
 
 #logo {
     float: left;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 /*navigation links*/
 
 #menu {
-    font-size: 110%;
+    font-size: 100%;
     letter-spacing: 1px;
     float: right;
 }
@@ -48,9 +48,62 @@ h1, h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 4px solid #9c1b1b;
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 2px solid #3a3a3a;
 }
+
+/*hero image and cover text*/
+
+#hero-outer {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(255,175,189,.5), rgba(100,216,243,.5), rgba(234,236,198,.5), rgba(245,146,176,.5), rgba(52,219,216,.5)) 0 0 / 600% no-repeat, url('../images/hero-image.jpg') 0 0 / cover no-repeat;
+    -webkit-animation: gradientAnimation 40s ease infinite;
+    animation: gradientAnimation 40s ease infinite;
+}
+
+#cover-text, #cover-text h2 {
+    color: #eff5d1;
+}
+
+/*hero gradient animation*/
+
+@-webkit-keyframes gradientAnimation {
+    0%   { background-position: 0% 30%, 0 0;}
+    50%  { background-position: 100% 70%, 0 0;}
+    100% { background-position: 0% 30%, 0 0;}
+  }
+@keyframes gradientAnimation {
+    0%   { background-position: 0% 30%, 0 0;}
+    50%  { background-position: 100% 70%, 0 0;}
+    100% { background-position: 0% 30%, 0 0;}
+  }
+
+/*cover text*/
+
+  #cover-text {
+      font-size: 130%;
+      font-family: open sans, sans-serif;
+      letter-spacing: 1px;
+
+      width: 400px;
+      height: 150px;
+
+      padding: 20px 0px 0px 10px;
+
+      background-color: rgba(172, 72, 72, 0.5);
+
+      bottom: 30px;
+      left: 30px;
+      position: absolute;
+  }
