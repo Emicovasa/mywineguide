@@ -39,7 +39,7 @@ h1, h2 {
 
 #menu li {
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 15px;
     float: left;
 }
 
@@ -63,6 +63,7 @@ h1, h2 {
     width: 100%;
     overflow: hidden;
     position: relative;
+    padding: 10px;
 }
 
 #hero-image {
@@ -70,6 +71,7 @@ h1, h2 {
     width: 100%;
     background: linear-gradient(45deg, rgba(255,175,189,.5), rgba(100,216,243,.5), rgba(234,236,198,.5), rgba(245,146,176,.5), rgba(52,219,216,.5)) 0 0 / 600% no-repeat, url('../images/hero-image.jpg') 0 0 / cover no-repeat;
     animation: gradientAnimation 40s ease infinite;
+    padding: 20px;
 }
 
 #cover-text, #cover-text h2 {
@@ -110,24 +112,21 @@ h1, h2 {
       height: 600px;
   }
 
-  #left-about {
-      width: 25%;
-      float: left;
-  }
-
   #right-about {
-    width: 75%;
+    width: 100%;
     float: right;
+    overflow: auto;
+    height: 500px;
   }
 
 hr {
     border-top: 1px solid #9c1b1b;
-    width: 100%;
+    width: 95%;
     margin-left: 20px;
 }
 
   .right-about-heading {
-      width: 100%;
+      width: 95%;
       clear: both;
       float: left;
       margin-left: 20px;
@@ -139,7 +138,6 @@ hr {
       text-align: center;
       margin: 20px 0;
       font-size: 50px;
-      border-bottom: 2px solid #c56262;
   }
 
   .right-about-heading h2 {
@@ -148,8 +146,100 @@ hr {
       letter-spacing: 1px;
   }
 
+  .right-about-heading h3 {
+      text-align: center;
+      font-size: 200%;
+  }
+
   .right-about-heading p {
       text-align: left;
       padding-bottom: 7px;
   }
  
+  #top-btn {
+      position: sticky;
+      bottom: 10px;
+      float: right;
+      background-color:rgba(85, 85, 85, .2);
+      padding: 10px;
+      font-size: 150%;
+  }
+
+  #top-btn:hover {
+    background-color: rgba(156, 27, 27, 0.2);
+  }
+
+  /*  trailer section  */
+
+  #video-journey {
+      height: 400px;
+  }
+  #invitation {
+      width: 100%;
+      padding-top: 20px;
+  }
+
+  .journey  {
+      width: 45%;
+      float: left;
+      text-align: left;
+  }
+
+  .journey h2 {
+      text-align: center;
+      padding-left: 30px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      font-size: 170%;
+  }
+
+  .journey p {
+      text-align: center;
+      padding-left: 50px;
+      padding-top: 30px;
+      font-size: 120%;
+  }
+
+  .video {
+      width: 50%;
+      float: right;
+  }
+
+  iframe {
+      float: right;
+      width: 100%;
+  }
+  
+  /* footer */
+
+  footer {
+      height: 50px;
+  }
+
+  .social-network {
+      text-align: center;
+  }
+  
+  .social-network > li {
+      display: inline;
+  }
+
+  .social-network i {
+      font-size: 160%;
+      margin: 1%;
+      color: #9c1b1b; 
+  }
+
+  footer p {
+      text-align: center;
+      padding-top: 5px;
+      color: inherit;
+      font-family: 'Raleway', sans-serif;
+    
+  }
+
+
+  /* Media queries */
+
+  /* For large to medium screens size from 1200px wide and down */
+  /* @media screen and (max-width: 1200px) 
