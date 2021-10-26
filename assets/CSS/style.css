@@ -22,6 +22,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 200%;
+    margin-left: 20px;
 }
 
 /*navigation links*/
@@ -68,7 +69,6 @@ h1, h2 {
     height: 700px;
     width: 100%;
     background: linear-gradient(45deg, rgba(255,175,189,.5), rgba(100,216,243,.5), rgba(234,236,198,.5), rgba(245,146,176,.5), rgba(52,219,216,.5)) 0 0 / 600% no-repeat, url('../images/hero-image.jpg') 0 0 / cover no-repeat;
-    -webkit-animation: gradientAnimation 40s ease infinite;
     animation: gradientAnimation 40s ease infinite;
 }
 
@@ -78,11 +78,7 @@ h1, h2 {
 
 /*hero gradient animation*/
 
-@-webkit-keyframes gradientAnimation {
-    0%   { background-position: 0% 30%, 0 0;}
-    50%  { background-position: 100% 70%, 0 0;}
-    100% { background-position: 0% 30%, 0 0;}
-  }
+
 @keyframes gradientAnimation {
     0%   { background-position: 0% 30%, 0 0;}
     50%  { background-position: 100% 70%, 0 0;}
@@ -93,7 +89,7 @@ h1, h2 {
 
   #cover-text {
       font-size: 130%;
-      font-family: open sans, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       letter-spacing: 1px;
 
       width: 400px;
@@ -101,9 +97,59 @@ h1, h2 {
 
       padding: 20px 0px 0px 10px;
 
-      background-color: rgba(172, 72, 72, 0.5);
+      background-color: rgba(156, 27, 27, 0.5);
 
       bottom: 30px;
       left: 30px;
       position: absolute;
   }
+
+  /* did you know ...?*/
+
+  #did-you-know {
+      height: 600px;
+  }
+
+  #left-about {
+      width: 25%;
+      float: left;
+  }
+
+  #right-about {
+    width: 75%;
+    float: right;
+  }
+
+hr {
+    border-top: 1px solid #9c1b1b;
+    width: 100%;
+    margin-left: 20px;
+}
+
+  .right-about-heading {
+      width: 100%;
+      clear: both;
+      float: left;
+      margin-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+  }
+
+  #facts {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 50px;
+      border-bottom: 2px solid #c56262;
+  }
+
+  .right-about-heading h2 {
+      text-align: left;
+      padding-bottom: 7px;
+      letter-spacing: 1px;
+  }
+
+  .right-about-heading p {
+      text-align: left;
+      padding-bottom: 7px;
+  }
+ 
