@@ -208,6 +208,7 @@ hr {
   iframe {
       float: right;
       width: 100%;
+      padding-top: 20px;
   }
   
   /* footer */
@@ -232,7 +233,7 @@ hr {
 
   footer p {
       text-align: center;
-      padding-top: 5px;
+      padding-top: 20px;
       color: inherit;
       font-family: 'Raleway', sans-serif;
     
@@ -241,5 +242,28 @@ hr {
 
   /* Media queries */
 
-  /* For large to medium screens size from 1200px wide and down */
-  /* @media screen and (max-width: 1200px) 
+  /* For large to medium screens size from 1024px wide and down */
+ @media screen and (max-width: 1200px) {
+
+  #video-journey {
+        width: 100%;
+        height: 1200;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    #invitation {
+        padding: 0;
+        margin: 0;
+    }
+
+    #video {
+        width: 65%;
+        float: right;
+        padding: 0;
+    }
+    footer {
+        padding-top: 50px;
+        margin: 0;
+    }
+  } 
