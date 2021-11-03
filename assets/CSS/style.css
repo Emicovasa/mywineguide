@@ -69,13 +69,13 @@ h1, h2 {
 #hero-image {
     height: 700px;
     width: 100%;
-    background: linear-gradient(45deg, rgba(255,175,189,.5), rgba(100,216,243,.5), rgba(234,236,198,.5), rgba(245,146,176,.5), rgba(52,219,216,.5)) 0 0 / 600% no-repeat, url('../images/hero-image.jpg') 0 0 / cover no-repeat;
+    background: linear-gradient(45deg, rgba(255,175,189,.5), rgba(100,216,243,.5), rgba(234,236,198,.5), rgba(245,146,176,.5), rgba(52,219,216,.5)) 0 0 / 1000% no-repeat, url('../images/hero-image.jpg') 0 0 / cover no-repeat;
     animation: gradientAnimation 40s ease infinite;
     padding: 20px;
 }
 
 #cover-text, #cover-text h2 {
-    color: #eff5d1;
+    color: #f7f6df;
 }
 
 /*hero gradient animation*/
@@ -243,27 +243,32 @@ hr {
   /* Media queries */
 
   /* For large to medium screens size from 1024px wide and down */
- @media screen and (max-width: 1200px) {
+ @media screen and (max-width: 950px) {
 
-  #video-journey {
+   #video-journey {
         width: 100%;
-        height: 1200;
+        height: 800;
         margin: 0 auto;
-        padding: 50px;
     }
 
-    #invitation {
+    .journey {
+        width: 100%;
         padding: 0;
         margin: 0;
     }
 
-    #video {
-        width: 65%;
-        float: right;
-        padding: 0;
-    }
-    footer {
-        padding-top: 50px;
+    .journey p {
+        width: 85%;
+        text-align: center;
+        padding-bottom: 20px;
         margin: 0;
     }
+
+    .video {
+        width: 100%;
+        float: left;
+        padding-bottom: 35px;
+        margin: 0;
+    }
+   
   } 
