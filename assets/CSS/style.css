@@ -46,6 +46,9 @@ h1, h2 {
 #menu a {
     text-decoration: none;
     color: inherit;
+    border-left-style: double;
+    border-left-color: #9c1b1b;
+    padding-left: 5px;
 }
 
 #menu a:hover {
@@ -120,8 +123,8 @@ h1, h2 {
   }
 
 hr {
-    border-top: 1px solid #9c1b1b;
-    width: 95%;
+    border-top: 4px solid #9c1b1b;
+    width: 100%;
     margin-left: 20px;
 }
 
@@ -195,9 +198,10 @@ hr {
 
   .journey p {
       text-align: center;
-      padding-left: 50px;
-      padding-top: 30px;
       font-size: 120%;
+      padding-left: 50px;
+      padding-top: 15px;
+      padding-bottom: 15px;
   }
 
   .video {
@@ -245,7 +249,15 @@ hr {
   /* For large to medium screens size from 1024px wide and down */
  @media screen and (max-width: 950px) {
 
-   #video-journey {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+   
+    #video-journey {
         width: 100%;
         height: 800;
         margin: 0 auto;
