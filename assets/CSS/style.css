@@ -21,7 +21,7 @@ h1, h2 {
 
 #logo {
     float: left;
-    font-size: 200%;
+    font-size: 150%;
     margin-left: 20px;
 }
 
@@ -100,7 +100,7 @@ h1, h2 {
       width: 400px;
       height: 150px;
 
-      padding: 20px 0px 0px 10px;
+      padding: 20px 10px 0px 10px;
 
       background-color: rgba(156, 27, 27, 0.5);
 
@@ -247,40 +247,53 @@ hr {
   /* Media queries */
 
   /* For large to medium screens size from 1024px wide and down */
- @media screen and (max-width: 950px) {
-
+ @media screen and (max-width: 1024px) {
+    
     #menu {
         clear: left;
         float: left;
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 20px;
         line-height: 20px;
     }
    
     #video-journey {
         width: 100%;
-        height: 800;
+        height: 800px;
         margin: 0 auto;
+    }
+
+    #cover-text {
+        font-size: 100%;
+        margin: 0%;
     }
 
     .journey {
         width: 100%;
         padding: 0;
-        margin: 0;
     }
 
     .journey p {
         width: 85%;
         text-align: center;
         padding-bottom: 20px;
-        margin: 0;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .video {
         width: 100%;
         float: left;
         padding-bottom: 35px;
-        margin: 0;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
    
+    hr {
+        margin: 0%;
+
+    }
+
   } 
